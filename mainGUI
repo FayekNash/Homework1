@@ -36,10 +36,10 @@ def button_input():
         else:
             print(f"Contact '{remove_contact}' not found.")
 
-    # Update the label text with the current list of contacts
+   
     new_list_button.config(text=f"Show New List: {Phonebook.contacts}")
 
-# create the main window
+
 window = tk.Tk()
 window.title("Contact Book")
 
