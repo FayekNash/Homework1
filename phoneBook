@@ -1,0 +1,31 @@
+contacts = {"Fayek": "0543927209",
+            "Laith": "0548764531",
+            "Ahmad": "0527608714"}
+
+def create_contact(name):
+    if name in contacts:
+        print(f"Contact '{name}' already exists.")
+    else:
+        contacts[name] = None
+
+def find_contact(name):
+    if name in contacts:
+        return contacts[name]
+    else:
+        return None
+
+def update_contact(name, new_name):
+    if name in contacts:
+        contacts[new_name] = contacts.pop(name)
+        return True
+    else:
+        return False
+
+def remove_contact(name):
+    if name in contacts:
+        del contacts[name]
+        return True
+    else:
+        return False
+
+print(contacts)
